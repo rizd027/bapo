@@ -1,4 +1,4 @@
-// src/router/index.ts
+﻿// src/router/index.ts
 import { createRouter, createWebHistory } from 'vue-router';
 import { dbService } from '../services/supabase';
 
@@ -24,7 +24,7 @@ const routes = [
     meta: { requiresGuest: true }
   },
 
-  // --- PORTAL WARGA (USER) FLAT ROUTES ---
+  // --- PORTAL MASYARAKAT (USER) FLAT ROUTES ---
   {
     path: '/home',
     name: 'UserHome',

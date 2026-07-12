@@ -1,4 +1,4 @@
-<!-- src/views/UserDashboard.vue -->
+﻿<!-- src/views/UserDashboard.vue -->
 <template>
   <div :class="['animate-fade-in', (activeTab === 'chat' || activeTab === 'home') ? 'space-y-4' : 'space-y-8']">
 
@@ -431,7 +431,7 @@
             Pengaturan Akun
           </h2>
           <p class="text-xs text-slate-500">
-            Kelola informasi profil dan pengaturan keamanan akun warga Anda.
+            Kelola informasi profil dan pengaturan keamanan akun masyarakat Anda.
           </p>
         </div>
 
@@ -523,7 +523,7 @@
             <span class="font-mono font-bold text-slate-800 dark:text-slate-200">{{ selectedRedemption?.id }}</span>
           </div>
           <div>
-            <span class="text-[9px] font-bold text-slate-400 uppercase block">Nama Warga</span>
+            <span class="text-[9px] font-bold text-slate-400 uppercase block">Nama Masyarakat</span>
             <span class="font-bold text-slate-800 dark:text-slate-200">@{{ selectedRedemption?.username || currentUser?.username }}</span>
           </div>
           <div>

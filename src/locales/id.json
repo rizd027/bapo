@@ -1,4 +1,4 @@
-{
+﻿{
   "common": {
     "logout": "Keluar",
     "loading": "Memuat...",
@@ -72,9 +72,9 @@
     },
     "leaderboard": {
       "title": "Papan Peringkat Pahlawan Lingkungan",
-      "subtitle": "5 Warga Teraktif Menyetor Popok Daur Ulang",
+      "subtitle": "5 Masyarakat Teraktif Menyetor Popok Daur Ulang",
       "rank": "Peringkat",
-      "username": "Nama Warga",
+      "username": "Nama Masyarakat",
       "totalDiapers": "Popok Terkumpul"
     },
     "calculator": {
@@ -105,7 +105,7 @@
     "reject": "Tolak",
     "acceptConfirm": "Apakah Anda yakin ingin menyetujui setoran ini?",
     "rejectConfirm": "Apakah Anda yakin ingin menolak setoran ini?",
-    "userDbTitle": "Database Kontributor Warga",
+    "userDbTitle": "Database Kontributor Masyarakat",
     "userColumn": "Nama Pengguna (Username)",
     "contributionColumn": "Total Kontribusi Popok",
     "pointsColumn": "Total Poin",
@@ -117,27 +117,27 @@
       "directEntry": "Input Setoran Langsung (Offline)",
       "userManagement": "Manajemen Pengguna",
       "settings": "Pengaturan & Backup",
-      "chat": "Diskusi Warga (Chat)"
+      "chat": "Diskusi Masyarakat (Chat)"
     },
     "directEntry": {
       "title": "Catat Setoran Offline",
-      "selectUser": "Pilih Warga Kontributor",
-      "selectUserPlaceholder": "Cari nama warga...",
+      "selectUser": "Pilih Masyarakat Kontributor",
+      "selectUserPlaceholder": "Cari nama masyarakat...",
       "diaperCount": "Jumlah Lembar Popok Fisik",
       "notes": "Catatan Petugas (Lokasi/Kondisi)",
       "submitBtn": "Simpan & Cetak Struk",
       "success": "Setoran offline berhasil disimpan!"
     },
     "userManagement": {
-      "createUserBtn": "Daftarkan Warga Baru",
-      "createUserTitle": "Daftarkan Akun Warga Baru",
-      "createUserSubtitle": "Gunakan ini untuk warga yang tidak memiliki HP/Device",
-      "historyModalTitle": "Detail Riwayat Setoran Warga",
+      "createUserBtn": "Daftarkan Masyarakat Baru",
+      "createUserTitle": "Daftarkan Akun Masyarakat Baru",
+      "createUserSubtitle": "Gunakan ini untuk masyarakat yang tidak memiliki HP/Device",
+      "historyModalTitle": "Detail Riwayat Setoran Masyarakat",
       "resetPasswordBtn": "Reset Sandi",
       "deleteConfirm": "Apakah Anda yakin ingin menghapus akun ini beserta semua riwayat setorannya?",
       "resetSuccess": "Kata sandi berhasil diatur ulang menjadi 123456!",
-      "deleteSuccess": "Akun warga berhasil dihapus.",
-      "createSuccess": "Akun warga berhasil didaftarkan!"
+      "deleteSuccess": "Akun masyarakat berhasil dihapus.",
+      "createSuccess": "Akun masyarakat berhasil didaftarkan!"
     },
     "settings": {
       "diaperRateLabel": "Tarif Rupiah per Lembar Popok (Rp)",
@@ -152,7 +152,7 @@
     "receipt": {
       "title": "STRUK BUKTI SETORAN POPOK",
       "transactionId": "ID Transaksi",
-      "name": "Nama Warga",
+      "name": "Nama Masyarakat",
       "date": "Tanggal Cetak",
       "amount": "Jumlah Popok",
       "points": "Poin Diperoleh",

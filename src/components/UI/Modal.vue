@@ -74,6 +74,7 @@
 
 <script setup lang="ts">
 import { ref, watch, onMounted, onBeforeUnmount, computed } from 'vue';
+import { useModalState } from '../../composables/useModalState';
 
 const props = defineProps({
   show: {
@@ -93,6 +94,7 @@ const props = defineProps({
 
 const emit = defineEmits(['close']);
 const modalBoxRef = ref<HTMLElement | null>(null);
+const { registerModalOpen, registerModalClose } = useModalState();
 
 const close = () => {
   emit('close');
@@ -115,20 +117,26 @@ const handleKeyDown = (e: KeyboardEvent) => {
   }
 };
 
-watch(() => props.show, (newVal) => {
+watch(() => props.show, (newVal, oldVal) => {
   if (newVal) {
     document.body.style.overflow = 'hidden';
+    registerModalOpen();
   } else {
     document.body.style.overflow = '';
+    if (oldVal) registerModalClose();
   }
 });
 
 onMounted(() => {
   window.addEventListener('keydown', handleKeyDown);
+  // Register if already open when mounted
+  if (props.show) registerModalOpen();
 });
 
 onBeforeUnmount(() => {
   window.removeEventListener('keydown', handleKeyDown);
   document.body.style.overflow = '';
+  // Ensure count is decremented if modal is destroyed while open
+  if (props.show) registerModalClose();
 });
 </script>

@@ -1,4 +1,4 @@
-<!-- src/App.vue -->
+﻿<!-- src/App.vue -->
 <template>
   <div class="min-h-screen flex bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-50 transition-colors duration-300 font-sans">
     
@@ -28,7 +28,7 @@
           <div v-if="!isCollapsed || isMobileOpen" class="flex flex-col min-w-0">
             <span class="font-extrabold text-sm text-emerald-400 truncate max-w-[130px] leading-tight" :title="'@' + username">@{{ username }}</span>
             <span class="text-[9px] font-bold text-white/60 tracking-widest uppercase">
-              {{ userRole === 'admin' ? 'Admin Portal' : 'Portal Warga' }}
+              {{ userRole === 'admin' ? 'Admin Portal' : 'Portal Masyarakat' }}
             </span>
           </div>
         </div>
@@ -441,7 +441,7 @@ const currentMenuItems = computed(() => {
       directEntry: { label: t('admin.tabs.directEntry'), icon: DirectIcon },
       userManagement: { label: t('admin.tabs.userManagement'), icon: UsersIcon },
       settings: { label: t('admin.tabs.settings'), icon: SettingsIcon },
-      chat: { label: t('admin.tabs.chat', 'Diskusi Warga (Chat)'), icon: ChatIcon }
+      chat: { label: t('admin.tabs.chat', 'Diskusi Masyarakat (Chat)'), icon: ChatIcon }
     } as Record<string, { label: string; icon: any }>;
   } else {
     return {

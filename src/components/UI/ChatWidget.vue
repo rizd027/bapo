@@ -1,6 +1,12 @@
 <!-- src/components/UI/ChatWidget.vue -->
 <template>
-  <div class="fixed bottom-6 right-6 z-[999] no-print">
+  <transition
+    enter-active-class="transition-all duration-200 ease-out"
+    leave-active-class="transition-all duration-150 ease-in"
+    enter-from-class="opacity-0 scale-75"
+    leave-to-class="opacity-0 scale-75"
+  >
+    <div v-show="!isAnyModalOpen" class="fixed bottom-6 right-6 z-[999] no-print">
     <!-- FAB Icon Button (Flat styled circle, rounded-lg) -->
     <button
       @click="toggleChat"
@@ -15,17 +21,21 @@
       </svg>
     </button>
 
-    <!-- Chat Dialog Popover overlay (No animation, instant render) -->
+    <!-- Chat Dialog — fullscreen on mobile, popover on sm+ -->
     <div
       v-if="isOpen"
-      class="absolute bottom-20 right-0 w-[350px] sm:w-[380px] h-[480px] bg-white dark:bg-slate-900 rounded-lg border border-slate-300 dark:border-slate-800 shadow-xl flex flex-col overflow-hidden"
+      class="
+        fixed inset-0 z-[9998]
+        sm:absolute sm:inset-auto sm:bottom-20 sm:right-0 sm:w-[380px] sm:h-[480px] sm:rounded-lg sm:border sm:border-slate-300 sm:dark:border-slate-800 sm:shadow-xl
+        bg-white dark:bg-slate-900 flex flex-col overflow-hidden
+      "
     >
       <!-- Header -->
       <div class="px-4 py-3 bg-forest-leaf text-white flex items-center justify-between shadow-sm">
         <div class="flex items-center gap-2">
           <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
           <div>
-            <h3 class="text-xs font-bold tracking-wide">Tanya Jawab Warga</h3>
+            <h3 class="text-xs font-bold tracking-wide">Tanya Jawab Masyarakat</h3>
             <p class="text-[9px] text-white/80 font-medium">Balasan admin cepat & aktif</p>
           </div>
         </div>
@@ -152,6 +162,7 @@
       </div>
     </teleport>
   </div>
+  </transition>
 </template>
 
 <script setup lang="ts">
@@ -159,9 +170,11 @@ import { ref, watch, onBeforeUnmount, nextTick } from 'vue';
 import { dbService, type ChatMessage } from '../../services/supabase';
 import { useChatWidget } from '../../composables/useChatWidget';
 import { useToast } from '../../composables/useToast';
+import { useModalState } from '../../composables/useModalState';
 
 const toast = useToast();
 const { isChatOpen: isOpen } = useChatWidget();
+const { isAnyModalOpen } = useModalState();
 const newMsgText = ref('');
 const isSending = ref(false);
 const messages = ref<ChatMessage[]>([]);

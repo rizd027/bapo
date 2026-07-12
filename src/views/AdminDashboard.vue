@@ -1,4 +1,4 @@
-<!-- src/views/AdminDashboard.vue -->
+﻿<!-- src/views/AdminDashboard.vue -->
 <template>
   <div :class="['animate-fade-in print:bg-white print:text-black flex flex-col', activeTab === 'chat' ? 'flex-1 h-full' : 'space-y-8']">
     
@@ -25,7 +25,7 @@
           </div>
           <div class="flex flex-col justify-between border-l border-slate-200 dark:border-slate-700/80 pl-6 lg:pl-8">
             <span class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Kontributor Aktif</span>
-            <span class="text-3xl font-black text-slate-900 dark:text-slate-50 font-sans mt-3">{{ usersList.length }} warga</span>
+            <span class="text-3xl font-black text-slate-900 dark:text-slate-50 font-sans mt-3">{{ usersList.length }} masyarakat</span>
           </div>
         </div>
 
@@ -48,7 +48,7 @@
         <!-- Kelola Pengumuman / News Slider -->
         <div class="space-y-5 pt-4 border-t border-slate-200 dark:border-slate-700/80">
           <div class="flex items-center justify-between">
-            <h2 class="text-lg font-bold text-slate-900 dark:text-slate-50">Kelola Pengumuman (Slider Home Warga)</h2>
+            <h2 class="text-lg font-bold text-slate-900 dark:text-slate-50">Kelola Pengumuman (Slider Home Masyarakat)</h2>
             <button
               @click="showAnnouncementForm = !showAnnouncementForm; editingAnnId = null; annForm = { title: '', body: '', image_url: '', image_preview: '' }"
               class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-forest-leaf text-white text-xs font-bold rounded-xl hover:bg-emerald-700 transition-colors"
@@ -130,10 +130,10 @@
       <div v-if="activeTab === 'queue'" class="space-y-6">
         <div class="border-b border-slate-200 dark:border-slate-700/80 pb-2">
           <h2 class="text-lg font-bold text-slate-900 dark:text-slate-50">
-            {{ queueSubTab === 'deposit' ? t('admin.verificationQueue') : 'Antrean Pengambilan Hadiah Warga' }}
+            {{ queueSubTab === 'deposit' ? t('admin.verificationQueue') : 'Antrean Pengambilan Hadiah Masyarakat' }}
           </h2>
           <p class="text-xs text-slate-500 mt-1">
-            {{ queueSubTab === 'deposit' ? 'Verifikasi setoran popok online dari warga.' : 'Konfirmasi serah terima penukaran poin produk ekologi warga.' }}
+            {{ queueSubTab === 'deposit' ? 'Verifikasi setoran popok online dari masyarakat.' : 'Konfirmasi serah terima penukaran poin produk ekologi masyarakat.' }}
           </p>
         </div>
 
@@ -242,7 +242,7 @@
             <svg class="mx-auto h-12 w-12 text-slate-400" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
             </svg>
-            <p>Belum ada riwayat pengajuan penukaran poin dari warga.</p>
+            <p>Belum ada riwayat pengajuan penukaran poin dari masyarakat.</p>
           </div>
 
           <div v-else class="divide-y divide-slate-200 dark:divide-slate-700/60">
@@ -327,7 +327,7 @@
             {{ t('admin.directEntry.title') }}
           </h2>
           <p class="text-xs text-slate-500 mt-2">
-            Gunakan form ini jika warga menyerahkan popok secara langsung tanpa gawai (HP).
+            Gunakan form ini jika masyarakat menyerahkan popok secara langsung tanpa gawai (HP).
           </p>
         </div>
 
@@ -367,7 +367,7 @@
                     v-model="userSearchQuery"
                     type="text"
                     class="w-full px-3 py-2 text-xs bg-slate-100 dark:bg-slate-900 text-slate-900 dark:text-slate-50 rounded-xl focus:outline-none border border-slate-200 dark:border-slate-800 focus:border-forest-leaf placeholder-slate-400 font-medium"
-                    placeholder="Cari nama warga..."
+                    placeholder="Cari nama masyarakat..."
                     @click.stop
                   />
                 </div>
@@ -379,7 +379,7 @@
                     type="button"
                     class="w-full text-left px-4 py-3 text-xs text-slate-400 font-semibold italic cursor-default"
                   >
-                    Warga tidak ditemukan
+                    Masyarakat tidak ditemukan
                   </button>
                   <button
                     v-else
@@ -516,7 +516,7 @@
               {{ t('admin.userManagement.createUserSubtitle') }}
             </p>
             <div>
-              <label for="new-username" class="block text-xs font-bold text-slate-500 mb-1.5">Username Warga</label>
+              <label for="new-username" class="block text-xs font-bold text-slate-500 mb-1.5">Username Masyarakat</label>
               <input id="new-username" v-model="newUserForm.username" type="text" class="w-full px-4 py-2.5 bg-slate-100/60 dark:bg-slate-950 text-slate-900 dark:text-slate-50 rounded-xl focus:outline-none border border-slate-200 dark:border-slate-800 focus:border-forest-leaf transition-all" placeholder="misal: budi_sutrisno" required />
             </div>
             <div>
@@ -687,7 +687,7 @@
             <h3 class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest">Daftar Percakapan</h3>
           </div>
 
-          <!-- Search Warga -->
+          <!-- Search Masyarakat -->
           <div class="mb-3 pr-4">
             <div class="relative">
               <svg class="absolute left-3 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -697,7 +697,7 @@
                 v-model="chatSearchQuery"
                 type="text"
                 class="w-full pl-8 pr-3 py-2 text-xs bg-slate-100/60 dark:bg-slate-900/40 text-slate-900 dark:text-slate-50 rounded-xl border border-slate-200 dark:border-slate-800 focus:outline-none focus:border-forest-leaf placeholder-slate-400 font-medium"
-                placeholder="Cari nama warga..."
+                placeholder="Cari nama masyarakat..."
               />
             </div>
           </div>
@@ -705,7 +705,7 @@
           <!-- User List -->
           <div class="flex-1 overflow-y-auto no-scrollbar pr-1 space-y-0.5">
             <div v-if="filteredUsersForChat.length === 0" class="py-8 text-center text-xs text-slate-400 font-semibold italic">
-              Warga tidak ditemukan
+              Masyarakat tidak ditemukan
             </div>
             <button
               v-else
@@ -749,7 +749,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
             </svg>
             <div class="text-center">
-              <p class="text-xs font-bold text-slate-400 dark:text-slate-500">Pilih warga dari panel kiri</p>
+              <p class="text-xs font-bold text-slate-400 dark:text-slate-500">Pilih masyarakat dari panel kiri</p>
               <p class="text-[10px] text-slate-300 dark:text-slate-600 mt-1">untuk memulai atau melanjutkan percakapan</p>
             </div>
           </div>
@@ -761,7 +761,7 @@
               <button
                 @click="activeChatUserId = null"
                 class="md:hidden p-2 -ml-2 rounded-xl hover:bg-slate-200/50 dark:hover:bg-slate-900 text-slate-600 dark:text-slate-400 mr-1"
-                title="Kembali ke Daftar Warga"
+                title="Kembali ke Daftar Masyarakat"
               >
                 <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
@@ -935,7 +935,7 @@
 
       <div class="grid grid-cols-2 text-center text-[9px] gap-4 mb-6 text-black">
         <div>
-          <p class="mb-8">Warga</p>
+          <p class="mb-8">Masyarakat</p>
           <p class="border-t border-black pt-1">@{{ activeReceipt.username }}</p>
         </div>
         <div>
@@ -990,7 +990,7 @@
       </div>
 
       <div class="mb-6 text-black">
-        <h3 class="text-sm font-bold uppercase border-b border-slate-300 pb-1 mb-3">II. Kontributor Warga Teraktif</h3>
+        <h3 class="text-sm font-bold uppercase border-b border-slate-300 pb-1 mb-3">II. Kontributor Masyarakat Teraktif</h3>
         <table class="w-full border-collapse border border-slate-300 text-left">
           <thead>
             <tr class="bg-slate-100 border-b border-slate-300 font-bold text-center">
@@ -1412,7 +1412,7 @@ const loadData = async () => {
 const isProcessingRedeem = reactive<Record<string, boolean>>({});
 
 const handleCompleteRedemption = async (redemptionId: string) => {
-  const confirmed = await dialog.confirm('Konfirmasi Penyerahan', 'Apakah Anda yakin ingin mengonfirmasi bahwa warga sudah mengambil barang ini secara fisik?');
+  const confirmed = await dialog.confirm('Konfirmasi Penyerahan', 'Apakah Anda yakin ingin mengonfirmasi bahwa masyarakat sudah mengambil barang ini secara fisik?');
   if (!confirmed) return;
 
   isProcessingRedeem[redemptionId] = true;
@@ -1432,7 +1432,7 @@ const handleCompleteRedemption = async (redemptionId: string) => {
 };
 
 const handleRejectRedemption = async (redemptionId: string) => {
-  const confirmed = await dialog.confirm('Tolak Penukaran Poin', 'Apakah Anda yakin ingin menolak pengajuan penukaran poin ini? Poin warga akan dikembalikan secara utuh.');
+  const confirmed = await dialog.confirm('Tolak Penukaran Poin', 'Apakah Anda yakin ingin menolak pengajuan penukaran poin ini? Poin masyarakat akan dikembalikan secara utuh.');
   if (!confirmed) return;
 
   isProcessingRedeem[redemptionId] = true;
@@ -1442,7 +1442,7 @@ const handleRejectRedemption = async (redemptionId: string) => {
       toast.error('Gagal memproses', error.message);
       return;
     }
-    toast.success('Penukaran Ditolak', 'Pengajuan penukaran poin berhasil ditolak dan poin warga telah dikembalikan.');
+    toast.success('Penukaran Ditolak', 'Pengajuan penukaran poin berhasil ditolak dan poin masyarakat telah dikembalikan.');
     await loadData();
   } catch (err: any) {
     toast.error('Kesalahan', err.message || 'Terjadi kesalahan');
@@ -1503,7 +1503,7 @@ const processVerify = async (depositId: string, status: 'approved' | 'rejected')
 // Offline deposit submission
 const submitDirectOffline = async () => {
   if (!offlineForm.userId) {
-    toast.warning('Warga Belum Dipilih', 'Silakan pilih warga kontributor terlebih dahulu.');
+    toast.warning('Masyarakat Belum Dipilih', 'Silakan pilih masyarakat kontributor terlebih dahulu.');
     return;
   }
 
@@ -1591,7 +1591,7 @@ const submitCreateUser = async () => {
 
 // Password Reset
 const resetPassword = async (userId: string) => {
-  const confirmed = await dialog.confirm('Atur Ulang Sandi', 'Apakah Anda yakin ingin mengatur ulang kata sandi warga ini menjadi default (123456)?');
+  const confirmed = await dialog.confirm('Atur Ulang Sandi', 'Apakah Anda yakin ingin mengatur ulang kata sandi masyarakat ini menjadi default (123456)?');
   if (!confirmed) return;
   
   const { error } = await dbService.resetUserPassword(userId, '123456');
@@ -1604,7 +1604,7 @@ const resetPassword = async (userId: string) => {
 
 // Delete Account
 const deleteAccount = async (userId: string) => {
-  const confirmed = await dialog.confirm('Hapus Akun Warga', t('admin.userManagement.deleteConfirm'));
+  const confirmed = await dialog.confirm('Hapus Akun Masyarakat', t('admin.userManagement.deleteConfirm'));
   if (!confirmed) return;
 
   const { error } = await dbService.deleteUser(userId);

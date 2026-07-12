@@ -1,4 +1,4 @@
-// src/services/supabase.ts
+﻿// src/services/supabase.ts
 import { createClient } from '@supabase/supabase-js';
 import { initialMockProfiles, initialMockAccounts } from './mockAccounts';
 
@@ -884,7 +884,7 @@ export const dbService = {
       return { data: null, error: new Error(`Poin tidak cukup. Poin Anda: ${profile.total_points}, biaya: ${totalCost} poin.`) };
     }
 
-    // Kurangi poin warga
+    // Kurangi poin masyarakat
     profiles[profileIndex].total_points -= totalCost;
     localStorage.setItem('bapo_profiles', JSON.stringify(profiles));
 
