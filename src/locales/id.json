@@ -1,0 +1,171 @@
+{
+  "common": {
+    "logout": "Keluar",
+    "loading": "Memuat...",
+    "cancel": "Batal",
+    "submit": "Kirim",
+    "username": "Username",
+    "password": "Kata Sandi",
+    "confirmPassword": "Konfirmasi Kata Sandi",
+    "role": "Peran",
+    "status": "Status",
+    "date": "Tanggal",
+    "notes": "Catatan",
+    "photo": "Foto Bukti",
+    "actions": "Aksi",
+    "user": "Pengguna",
+    "admin": "Admin",
+    "noData": "Tidak ada data tersedia"
+  },
+  "auth": {
+    "loginTitle": "Masuk ke BA'PO",
+    "loginSubtitle": "Balai Pengumpulan POPOK Greenetix Indonesia",
+    "registerTitle": "Daftar Akun Baru",
+    "registerSubtitle": "Bergabung menyelamatkan lingkungan bersama kami",
+    "loginButton": "Masuk",
+    "registerButton": "Daftar",
+    "haveAccount": "Sudah punya akun? Masuk",
+    "noAccount": "Belum punya akun? Daftar",
+    "forgotPassword": "Lupa kata sandi? Hubungi Admin via WhatsApp",
+    "validation": {
+      "usernameRequired": "Username wajib diisi",
+      "usernameMin": "Username minimal harus 3 karakter",
+      "usernameSpaces": "Username tidak boleh mengandung spasi",
+      "passwordRequired": "Kata sandi wajib diisi",
+      "passwordMin": "Kata sandi minimal harus 6 karakter",
+      "passwordsMatch": "Konfirmasi kata sandi tidak cocok"
+    }
+  },
+  "dashboard": {
+    "welcome": "Selamat datang kembali,",
+    "environmentalImpact": "Dampak Lingkungan Anda",
+    "diapersCollected": "Popok Dikumpulkan",
+    "diapersCollectedUnit": "lembar",
+    "pointsBalance": "Saldo Poin",
+    "pointsBalanceUnit": "poin",
+    "rupiahBalance": "Konversi Rupiah",
+    "rupiahUnit": "Rp",
+    "depositFormTitle": "Setor Limbah Popok",
+    "diaperCountLabel": "Jumlah Lembar Popok",
+    "notesPlaceholder": "Catatan tambahan (opsional)",
+    "uploadPhotoBtn": "Unggah Foto Bukti",
+    "submitting": "Mengirim...",
+    "submitSuccess": "Setoran berhasil diajukan! Menunggu verifikasi admin.",
+    "historyTitle": "Riwayat Setoran Anda",
+    "statusPending": "Menunggu Verifikasi",
+    "statusApproved": "Disetujui",
+    "statusRejected": "Ditolak",
+    "dropPointMap": "Drop Point Lokasi Peta",
+    "dropPointSubtitle": "Kunjungi workshop kami untuk penyerahan fisik popok",
+    "workshopLocation": "Workshop Greenetix KM 12",
+    "workshopAddress": "Jl. PDAM KM 12 Dalam, Karangjoang, Balikpapan Utara",
+    "operationalScheduleTitle": "Jadwal Operasional Pengumpulan",
+    "operationalScheduleDetail": "Hari Pengumpulan: Hanya Hari Minggu, Pukul 16.00 - 18.00 WITA",
+    "rateInfo": "Setiap 1 lembar limbah popok urine dihargai Rp50 (1 poin)",
+    "tabs": {
+      "home": "Dashboard",
+      "deposit": "Setor & Lokasi",
+      "history": "Riwayat Setoran",
+      "leaderboard": "Simulasi & Peringkat",
+      "redemption": "Tukar Poin",
+      "chat": "Tanya Jawab (Chat)"
+    },
+    "leaderboard": {
+      "title": "Papan Peringkat Pahlawan Lingkungan",
+      "subtitle": "5 Warga Teraktif Menyetor Popok Daur Ulang",
+      "rank": "Peringkat",
+      "username": "Nama Warga",
+      "totalDiapers": "Popok Terkumpul"
+    },
+    "calculator": {
+      "title": "Kalkulator Dampak Ekologis",
+      "sliderLabel": "Simulasikan Rencana Setoran Popok Anda",
+      "preventedWaste": "Plastik Dicegah ke TPA (kg)",
+      "producedFertilizer": "Potensi Pupuk Organik Cair (Liter)"
+    },
+    "redemption": {
+      "title": "Katalog Penukaran Poin",
+      "subtitle": "Tukarkan poin Anda dengan produk ekologi bio-pupuk Greenetix",
+      "pointsCost": "Biaya Poin",
+      "redeemBtn": "Tukarkan Produk",
+      "historyTitle": "Riwayat Penukaran Poin Anda",
+      "noHistory": "Belum ada produk yang ditukarkan.",
+      "success": "Penukaran poin berhasil! Silakan ambil barang di workshop.",
+      "insufficientPoints": "Saldo poin Anda tidak mencukupi untuk menukarkan barang ini."
+    }
+  },
+  "admin": {
+    "dashboardTitle": "Dashboard Monitoring Admin",
+    "globalStatsTitle": "Statistik Volume Global & Payout",
+    "chartDiapers": "Total Popok Terkumpul (Lembar)",
+    "chartPayout": "Total Payout Kas (Rupiah)",
+    "verificationQueue": "Antrean Verifikasi Setoran",
+    "verifyDiaperCount": "Jumlah Riil Popok",
+    "approve": "Setujui",
+    "reject": "Tolak",
+    "acceptConfirm": "Apakah Anda yakin ingin menyetujui setoran ini?",
+    "rejectConfirm": "Apakah Anda yakin ingin menolak setoran ini?",
+    "userDbTitle": "Database Kontributor Warga",
+    "userColumn": "Nama Pengguna (Username)",
+    "contributionColumn": "Total Kontribusi Popok",
+    "pointsColumn": "Total Poin",
+    "rupiahColumn": "Total Kas Diterima",
+    "joinDateColumn": "Tanggal Bergabung",
+    "tabs": {
+      "overview": "Ikhtisar & Statistik",
+      "queue": "Antrean Verifikasi",
+      "directEntry": "Input Setoran Langsung (Offline)",
+      "userManagement": "Manajemen Pengguna",
+      "settings": "Pengaturan & Backup",
+      "chat": "Diskusi Warga (Chat)"
+    },
+    "directEntry": {
+      "title": "Catat Setoran Offline",
+      "selectUser": "Pilih Warga Kontributor",
+      "selectUserPlaceholder": "Cari nama warga...",
+      "diaperCount": "Jumlah Lembar Popok Fisik",
+      "notes": "Catatan Petugas (Lokasi/Kondisi)",
+      "submitBtn": "Simpan & Cetak Struk",
+      "success": "Setoran offline berhasil disimpan!"
+    },
+    "userManagement": {
+      "createUserBtn": "Daftarkan Warga Baru",
+      "createUserTitle": "Daftarkan Akun Warga Baru",
+      "createUserSubtitle": "Gunakan ini untuk warga yang tidak memiliki HP/Device",
+      "historyModalTitle": "Detail Riwayat Setoran Warga",
+      "resetPasswordBtn": "Reset Sandi",
+      "deleteConfirm": "Apakah Anda yakin ingin menghapus akun ini beserta semua riwayat setorannya?",
+      "resetSuccess": "Kata sandi berhasil diatur ulang menjadi 123456!",
+      "deleteSuccess": "Akun warga berhasil dihapus.",
+      "createSuccess": "Akun warga berhasil didaftarkan!"
+    },
+    "settings": {
+      "diaperRateLabel": "Tarif Rupiah per Lembar Popok (Rp)",
+      "operationalScheduleLabel": "Teks Jadwal Operasional Pengumpulan",
+      "saveSettingsBtn": "Simpan Pengaturan",
+      "saveSettingsSuccess": "Pengaturan sistem berhasil diperbarui!",
+      "exportBtn": "Ekspor Database ke JSON",
+      "importBtn": "Impor Database Backup",
+      "importSuccess": "Database berhasil dipulihkan dari backup!",
+      "importError": "Format file backup tidak valid."
+    },
+    "receipt": {
+      "title": "STRUK BUKTI SETORAN POPOK",
+      "transactionId": "ID Transaksi",
+      "name": "Nama Warga",
+      "date": "Tanggal Cetak",
+      "amount": "Jumlah Popok",
+      "points": "Poin Diperoleh",
+      "rupiah": "Saldo Konversi",
+      "staffSignature": "Tanda Tangan Petugas",
+      "slogan": "Popok Bukan Sampah, Tapi Sumber Manfaat! - Greenetix Indonesia"
+    },
+    "reports": {
+      "monthlyReportTitle": "LAPORAN BULANAN BANK POPOK BA'PO",
+      "totalDeposits": "Total Pengajuan",
+      "approvedCount": "Setoran Disetujui",
+      "rejectedCount": "Setoran Ditolak",
+      "printReportBtn": "Cetak Laporan Bulanan"
+    }
+  }
+}

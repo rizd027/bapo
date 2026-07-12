@@ -1,0 +1,171 @@
+{
+  "common": {
+    "logout": "Log Out",
+    "loading": "Loading...",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "username": "Username",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "role": "Role",
+    "status": "Status",
+    "date": "Date",
+    "notes": "Notes",
+    "photo": "Photo Receipt",
+    "actions": "Actions",
+    "user": "User",
+    "admin": "Admin",
+    "noData": "No data available"
+  },
+  "auth": {
+    "loginTitle": "Sign In to BA'PO",
+    "loginSubtitle": "Greenetix Indonesia Diaper Collection Center",
+    "registerTitle": "Register New Account",
+    "registerSubtitle": "Join us to save the environment together",
+    "loginButton": "Sign In",
+    "registerButton": "Register",
+    "haveAccount": "Already have an account? Sign In",
+    "noAccount": "Don't have an account? Register",
+    "forgotPassword": "Forgot password? Contact Admin via WhatsApp",
+    "validation": {
+      "usernameRequired": "Username is required",
+      "usernameMin": "Username must be at least 3 characters",
+      "usernameSpaces": "Username cannot contain spaces",
+      "passwordRequired": "Password is required",
+      "passwordMin": "Password must be at least 6 characters",
+      "passwordsMatch": "Confirm password does not match"
+    }
+  },
+  "dashboard": {
+    "welcome": "Welcome back,",
+    "environmentalImpact": "Your Environmental Impact",
+    "diapersCollected": "Diapers Collected",
+    "diapersCollectedUnit": "pcs",
+    "pointsBalance": "Points Balance",
+    "pointsBalanceUnit": "pts",
+    "rupiahBalance": "Rupiah Conversion",
+    "rupiahUnit": "Rp",
+    "depositFormTitle": "Deposit Diaper Waste",
+    "diaperCountLabel": "Number of Diapers",
+    "notesPlaceholder": "Additional notes (optional)",
+    "uploadPhotoBtn": "Upload Photo Receipt",
+    "submitting": "Submitting...",
+    "submitSuccess": "Deposit submitted successfully! Awaiting admin verification.",
+    "historyTitle": "Your Deposit History",
+    "statusPending": "Awaiting Verification",
+    "statusApproved": "Approved",
+    "statusRejected": "Rejected",
+    "dropPointMap": "Drop Point Location Map",
+    "dropPointSubtitle": "Visit our workshop to drop off diapers physically",
+    "workshopLocation": "Greenetix Workshop KM 12",
+    "workshopAddress": "Jl. PDAM KM 12 Dalam, Karangjoang, Balikpapan Utara",
+    "operationalScheduleTitle": "Collection Operational Hours",
+    "operationalScheduleDetail": "Collection Days: Sundays only, 16.00 - 18.00 WITA",
+    "rateInfo": "Each piece of urine diaper is valued at Rp50 (1 point)",
+    "tabs": {
+      "home": "Dashboard",
+      "deposit": "Deposit & Maps",
+      "history": "Deposit History",
+      "leaderboard": "Simulation & Rankings",
+      "redemption": "Redeem Points",
+      "chat": "Q&A (Chat)"
+    },
+    "leaderboard": {
+      "title": "Environmental Heroes Leaderboard",
+      "subtitle": "Top 5 Most Active Residents Depositing Recycled Diapers",
+      "rank": "Rank",
+      "username": "Resident Name",
+      "totalDiapers": "Total Diapers"
+    },
+    "calculator": {
+      "title": "Ecological Impact Calculator",
+      "sliderLabel": "Simulate Your Planned Diaper Deposit",
+      "preventedWaste": "Plastic Prevented from Landfill (kg)",
+      "producedFertilizer": "Potential Organic Liquid Fertilizer (Liter)"
+    },
+    "redemption": {
+      "title": "Points Redemption Catalog",
+      "subtitle": "Redeem your points for Greenetix organic bio-fertilizer products",
+      "pointsCost": "Points Cost",
+      "redeemBtn": "Redeem Product",
+      "historyTitle": "Your Points Redemption History",
+      "noHistory": "No products redeemed yet.",
+      "success": "Points redeemed successfully! Collect your items at the workshop.",
+      "insufficientPoints": "Your points balance is insufficient to redeem this item."
+    }
+  },
+  "admin": {
+    "dashboardTitle": "Admin Monitoring Dashboard",
+    "globalStatsTitle": "Global Volume & Payout Statistics",
+    "chartDiapers": "Total Diapers Collected (Pcs)",
+    "chartPayout": "Total Cash Payout (Rupiah)",
+    "verificationQueue": "Deposit Verification Queue",
+    "verifyDiaperCount": "Real Diaper Count",
+    "approve": "Approve",
+    "reject": "Reject",
+    "acceptConfirm": "Are you sure you want to approve this deposit?",
+    "rejectConfirm": "Are you sure you want to reject this deposit?",
+    "userDbTitle": "Contributor Database",
+    "userColumn": "Username",
+    "contributionColumn": "Total Diaper Contribution",
+    "pointsColumn": "Total Points",
+    "rupiahColumn": "Total Cash Received",
+    "joinDateColumn": "Join Date",
+    "tabs": {
+      "overview": "Overview & Statistics",
+      "queue": "Verification Queue",
+      "directEntry": "Direct Entry (Offline)",
+      "userManagement": "User Management",
+      "settings": "Settings & Backup",
+      "chat": "Citizen Discussion (Chat)"
+    },
+    "directEntry": {
+      "title": "Record Offline Deposit",
+      "selectUser": "Select Contributor User",
+      "selectUserPlaceholder": "Search user name...",
+      "diaperCount": "Physical Diaper Count",
+      "notes": "Officer Notes (Location/Condition)",
+      "submitBtn": "Save & Print Receipt",
+      "success": "Offline deposit saved successfully!"
+    },
+    "userManagement": {
+      "createUserBtn": "Register New Citizen",
+      "createUserTitle": "Register New Citizen Account",
+      "createUserSubtitle": "Use this for residents who do not have a device/phone",
+      "historyModalTitle": "Citizen Deposit History Details",
+      "resetPasswordBtn": "Reset Pass",
+      "deleteConfirm": "Are you sure you want to delete this account and all of its deposit history?",
+      "resetSuccess": "Password successfully reset to 123456!",
+      "deleteSuccess": "Citizen account successfully deleted.",
+      "createSuccess": "Citizen account successfully registered!"
+    },
+    "settings": {
+      "diaperRateLabel": "Rupiah Rate per Diaper Piece (Rp)",
+      "operationalScheduleLabel": "Operational Schedule Text",
+      "saveSettingsBtn": "Save Settings",
+      "saveSettingsSuccess": "System settings updated successfully!",
+      "exportBtn": "Export Database to JSON",
+      "importBtn": "Import Backup Database",
+      "importSuccess": "Database successfully restored from backup!",
+      "importError": "Invalid backup file format."
+    },
+    "receipt": {
+      "title": "DIAPER DEPOSIT RECEIPT",
+      "transactionId": "Transaction ID",
+      "name": "Citizen Name",
+      "date": "Print Date",
+      "amount": "Diaper Count",
+      "points": "Points Earned",
+      "rupiah": "Converted Cash",
+      "staffSignature": "Staff Signature",
+      "slogan": "Diaper is not waste, but source of benefits! - Greenetix Indonesia"
+    },
+    "reports": {
+      "monthlyReportTitle": "BA'PO DIAPER BANK MONTHLY REPORT",
+      "totalDeposits": "Total Submissions",
+      "approvedCount": "Approved Deposits",
+      "rejectedCount": "Rejected Deposits",
+      "printReportBtn": "Print Monthly Report"
+    }
+  }
+}
